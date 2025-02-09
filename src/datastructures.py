@@ -11,7 +11,24 @@ class FamilyStructure:
     def __init__(self, last_name):
         self.last_name = last_name
         self._next_id = 1
-        self._members = []
+        self._members = ([{
+            "id": self._generate_id(),
+            "age": 33,
+            "first_name": "John",
+            "lucky_numbers": [7, 13, 22]
+        },
+        {
+        "id": self._generate_id(),
+            "age": 35,
+            "first_name": "Jane",
+            "lucky_numbers": [10, 14, 3]    
+        },
+        {
+        "id": self._generate_id(),
+            "age": 5,
+            "first_name": "Jimmy",
+            "lucky_numbers": [1]    
+        }])
 
     # This method generates a unique 'id' when adding members into the list (you shouldn't touch this function)
     def _generate_id(self):

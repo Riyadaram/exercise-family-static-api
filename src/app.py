@@ -2,8 +2,8 @@
 This module takes care of starting the API Server, Loading the DB and Adding the endpoints
 """
 import os
-from flask import Flask, request, jsonify
-from flask_cors import CORS
+from flask import Flask, request, jsonify # type: ignore
+from flask_cors import CORS # type: ignore
 from utils import APIException, generate_sitemap
 from datastructures import FamilyStructure
 
@@ -33,9 +33,7 @@ Jimmy = {
     "lucky_numbers": [1]
 }
 
-jackson_family.add_member(John)
-jackson_family.add_member(Jane)
-jackson_family.add_member(Jimmy)
+
 
 # Handle/serialize errors like a JSON object
 @app.errorhandler(APIException)

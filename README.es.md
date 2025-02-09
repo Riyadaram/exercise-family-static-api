@@ -30,7 +30,7 @@ https://github.com/breatheco-de/exercise-family-static-api
 
 ## 📝 Instrucciones
 
-1. Crea el código necesario para desarrollar los API endpoints descritos más adelante.
+ 1. Crea el código necesario para desarrollar los API endpoints descritos más adelante.
 
 2. Los únicos dos archivos que tienes que editar son:
 
